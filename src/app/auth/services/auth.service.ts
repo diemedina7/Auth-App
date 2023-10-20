@@ -2,8 +2,9 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map, of, tap } from 'rxjs';
 
-import { environment } from '../../../../../nest-backend/src/environments/environments';
+
 import { AuthStatus, LoginResponse, User } from '../interfaces';
+import { environment } from 'src/environments/environments';
 
 @Injectable({
   providedIn: 'root'
