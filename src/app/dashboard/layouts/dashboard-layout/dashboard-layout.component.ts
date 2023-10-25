@@ -9,4 +9,8 @@ export class DashboardLayoutComponent {
 
   private authService = inject( AuthService );
   public user = computed( () => this.authService.currentUser() );
+
+  public onLogout() {
+    this.authService.logout();
+  }
 }
